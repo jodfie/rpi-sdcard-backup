@@ -20,7 +20,7 @@
 # Define some variables
 sdCardDisk=$(sudo lsblk | grep disk | awk '{print $1}')
 sdCardMountPoint="/dev/${sdCardDisk}"
-backupDirectory='~/Desktop/'
+backupDirectory='/home/pi/Desktop/'
 today=$(date +%Y-%m-%d)
 days=$(( ( $(date '+%s') - $(date -d '5 weeks ago' '+%s') ) / 86400 ))
 # Colors
