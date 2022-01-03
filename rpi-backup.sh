@@ -20,7 +20,7 @@
 # Define some variables
 sdCardDisk=$(sudo lsblk | grep disk | awk '{print $1}')
 sdCardMountPoint="/dev/${sdCardDisk}"
-backupDirectory='/mnt/pihole_backup' # This is a share on my Netgear ReadyNAS that I mounted on my RaspberryPi
+backupDirectory='/home/pi/Desktop' # This is a share on my Netgear ReadyNAS that I mounted on my RaspberryPi
 today=$(date +%Y-%m-%d)
 days=$(( ( $(date '+%s') - $(date -d '5 weeks ago' '+%s') ) / 86400 ))
 # Colors
