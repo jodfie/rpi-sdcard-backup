@@ -20,7 +20,7 @@
 # Define some variables
 sdCardDisk="mmcblk0"
 sdCardMountPoint="/dev/${sdCardDisk}"
-backupDirectory="/media/backup"
+backupDirectory="/media/ssd/backup"
 today=$(date +%Y-%m-%d)
 days=$(( ( $(date '+%s') - $(date -d '5 weeks ago' '+%s') ) / 86400 ))
 # Colors
